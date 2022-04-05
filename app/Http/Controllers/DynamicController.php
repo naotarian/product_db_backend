@@ -11,5 +11,6 @@ class DynamicController extends Controller
         $path =  app_path() . "/Library/Python/text_extract.py 2>&1";
         $command="python3 " . $path;
         exec($command, $output, $return);
+        dd($output);
     }
 }
